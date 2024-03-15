@@ -67,7 +67,7 @@ android {
             println("appDistributionUpload${abiName.capitalize()}${variant.name.capitalize()}")
 
             tasks.register("appDistributionUpload${abiName.capitalize()}${variant.name.capitalize()}", com.google.firebase.appdistribution.gradle.UploadDistributionTask) {
-                //appId = "1:931669648783:android:ea647291d2f2c4be2b17fa"
+                //appId = "" 
                 artifactPath = output.outputFile.absolutePath
                 serviceCredentialsFile = project.file("credential/service-accountA.json").absolutePath
                 group = "tester"
